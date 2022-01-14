@@ -4,7 +4,7 @@ const result = require('dotenv').config({ path: path.join(__dirname, '.env') })
 if (result.error) throw result.error // Throw an error if it failed to load the content off the .env file.
 
 const {
-    PREFIX: prefix = '$',
+    PREFIX: prefix = 'movie',
     BOT_TOKEN: botToken,
     ENCRYPTION_KEY: encryptionKey,
     ENCRYPTION_IV: encryptionIV,
